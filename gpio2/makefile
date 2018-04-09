@@ -1,6 +1,6 @@
 SUBDIRS = lib src
 File= gpio
-exe= test
+exe= server
 
 all: $(SUBDIRS)
 
@@ -9,6 +9,6 @@ $(SUBDIRS):
 
 clean:
 	
-	rm ./lib/$(File).o ./lib/$(File).a ./src/$(exe)
+	rm ./lib/$(File).o ./lib/$(File).a ./bin/$(exe)
 
 .PHONY: $(SUBDIRS)
